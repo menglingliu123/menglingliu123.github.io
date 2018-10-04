@@ -4,123 +4,55 @@ description: "Boilerplate of Hux Blog"
 ---
 
 
-<!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英语 English </option>
-</select>
+# 个人信息
 
-<!-- Chinese Version -->
-<div class="zh post-container">
-    <blockquote>
-        写写代码，做做设计，看看产品。
-        世界那么大，多玩玩看看。
-    </blockquote>
-    9月21日上午，阳光明媚，鲜花斗艳。帕洛阿尔托苹果店里欢声笑语，人头攒动。苹果公司首席执行官蒂姆·库克先生在店长欧阳猛南陪同下，不远千米，深入到一线店面，为那里的员工带去节曰的问候和良好的祝愿。<br><br>“果粉们，你们辛苦了，我代表某果公司，祝你们身体健康，生活幸福，工作成功！”库克亲切慰问广大员工和顾客，并就iOS7、iPhone 5S和iPhone 5C的销售状况进行调研。 <br><br>“您现在每月工资有多少？肾5S拿到了吗？”在店里，库克关切地向果粉们问起这一问题。当听说果粉们排到了5S，库克满意地连连点头。接着他指出，近年来苹果事业发展取得巨大成就，特别是iPhone影响剧增，老百姓对iOS满意度逐步提高，在这个转变过程中，果粉的辛勤工作功不可没。<br><br>库克看到一个中国小朋友在排队买iPhone 5S，亲切的问：“5288元一台能承受不？”小朋友回答到：“能！”当得知这位小朋友卖了一个肾来买iPhone 5S时，库克叮嘱道：“在支持苹果的同时，也要爱护身体。”<br><br>库克与购买苹果手机的果粉们兴致勃勃地参观了苹果专卖店，和员工们拉了拉家常，并饶有兴趣地玩了四盘切西瓜游戏，与普通员工同乐。<br><br>在交谈中，库克多次关心地强调：“有了iPhone 5C，就不卖iPhone 5了。”并对顾客说：“好好休息，身体是革命的本钱嘛！”会谈始终在亲切友好的气氛中进行。<br><br>顾客们就库克的讲话达成了广泛的共识，并承认世界上只有iOS最流畅，要紧紧的团结在以库克先生为首席执行官的苹果公司集体周围，一心一意抓学习，聚精会神谋发展。<br>
-    <br>帕洛阿尔托苹果专卖店当日原则通过《蒂姆·库克首席执行官在加州新苹果店的讲话纪要》，并下发各分店认真学习、研讨。
-
-    <p style="text-align:right;">
-        —— <a href="http://www.zhihu.com/question/19687065">李书航 － 什么是「共产中文腔调」？ </a>
-    </p>
-
-</div>
-
-<!-- English Version -->
-<div class="en post-container">
-    <blockquote>
-        Designer or Engineer, things in between.
-    </blockquote>
-
-    <p>
-        Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.
-    </p>
-
-    <p>
-    If you want to live your life in a creative way, as an artist, you have to not look back too much. You have to be willing to take whatever you’ve done and whoever you were and throw them away.
-    </p>
-
-    <p style="text-align:right;">
-    -- Steve Jobs
-    </p>
-
-</div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        }
-    }
-    onLanChange(0);
-</script>
+ - 刘梦玲/女/1993
+ - 本科/重庆邮电大学计算机系 
+ - 工作年限：2.5年
+ - company：Tencent
+ - Github：https://github.com/menglingliu123
+ 
+# 联系方式
+ - Phone：15923266648
+ - Email：m15923266648@163.com
 
 
+# 技能清单
+- 熟练掌握 java，C++，python 常用技术
+- 熟悉网络编程和多线程编程，熟悉TCP/IP，HTTP等网络协议
+- 熟悉使用jsp，servlet，jdbc技术。熟悉常用开源框架Struts2，Hibernate4，Spring2.0，Spring MVC，Mybatis，并理解其运行原理，了解其源代码
+- 熟练操作 mysql 数据库，熟悉 SQL，PL/SQL 语句，有mysql开发经验
+- 熟练使用 eclipse，IntelliJ IDEA，git，svn 等工具
+- 熟悉使用html，css，javascript等前端技术，能够熟练使用 jquery
+- 熟悉linux下基本操作
+- - 熟悉基本数据结构和算法设计，具有一定的软件工程意识
 
-{% if site.duoshuo_username %}
-<!-- 多说评论框 start -->
-<div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
+# 实践经验
+大一开始学习java，运用多线程和网络编程，swing技术，编写了类似qq的聊天软件。大二下进入重邮数字媒体研究所的后端方向进行学习，积累了不少网站开发经验
 
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div>
-<!-- 多说评论框 end -->
+大二加入学校菜小二创业团队，了解了O2O的运行模式及互联网创业的思维
 
-<!-- Duoshuo hacking -->
-<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+大三在重邮数字媒体研究所后端方向担任组长负责网站项目后端框架的搭建，有了一定自己对网站建设的理解与想法
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User hacking by Hux
-    var _user = document.getElementById('dsUser').value;
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-{% endif %}
+大四得到了腾讯阿里的实习机会，在阿里淘宝智能客服阿里小蜜实习，主要参与根据用户行为推送相应消息的后台开发部分。在腾讯社交广告效果部门实习，主要参与广告业务的投放部分的后台代码建设和模型建设。
+      
+工作经历
+
+## 腾讯 （ 2016年7月 ~ 至今 ）
+
+### 腾讯社交广告部-日志系统建设（独立开发与搭建）
+背景：因缺乏对分布式日志的收集，分析，与查询功能，导致定位问题困难
+项目概述：使用file beat agent对分布式日志进行收集，并将日志push至独立服务器logstash中进行解析，过滤和拆分。最后调用elastic search引擎的Api将日志数据写入。再使用开源软件kabana对日志进行展示与搜索
 
 
-{% if site.disqus_username %}
-<!-- disqus 评论框 start -->
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
+### 微信广告业务（业务owner）
+背景：腾讯系广告产品类型多，例如微信广告与QQ广告的系统相互独立。导致广告主投放的广告，无法在所有腾讯系广告中进行竞争从而不能达到最好的广告收益。因此对多方广告系统融合。
+项目概述：中期接手业务，该业务主要难点在于对微信广告业务与其他广告业务模型的融合。而模型是整个广告系统都需识别的统一协议，因此需要在多方业务模型中抽象出一个通用而又效的模型。因广告业务复杂，采用了PHP C++ Jave等多方语言对不同的投放业务功能进行支持。
+  
+# 其他项目经验
+- 重庆邮电大学官方网站 
+- 南岸区人民医院官方网站
+- 重庆邮电大学党支部建设网站
+- 仿金蝶网页版管理系统
+- 重庆邮电大学数字研究所招新网站
+- 政府某部门考试管理系统
