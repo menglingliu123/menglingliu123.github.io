@@ -9,6 +9,7 @@ tags:
     - OS
     - Unix
     - Linux
+    - 游戏
 ---
 
 > This document is not completed and will be updated anytime.
